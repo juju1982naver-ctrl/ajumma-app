@@ -28,7 +28,9 @@
 | 연천 | 수레울아트홀 | https://yccs.or.kr |
 | 연천 | 전곡선사박물관 | https://jgpm.ggcf.kr/ |
 | 연천 | 연천군도서관 강좌 | https://library.yeoncheon.go.kr/menu/10051/program/30013/lectureList.do |
-| 동두천 | 경기북부어린이박물관 | https://ngcm.ggcf.kr/ |
+| 동두천 | 경기북부어린이박물관 (공지 포함) | https://ngcm.ggcf.kr/ , https://ngcm.ggcf.kr/boards/news |
+| 동두천 | 동두천시 문화관광 (축제 메뉴·문화관광 소식, robots 막히지 않음) | https://www.ddc.go.kr/tour/index.do , https://www.ddc.go.kr/tour/contents.do?key=266 |
+| 동두천 | 뉴스 검색 (동두천은 출처가 적어 꼭 할 것) | "동두천시 개최", "동두천톡톡", "소요산 축제", "동두천 책문화축제" 등 + 이번 달·다음 달 |
 | 양주 | 양주시도서관 강좌 | https://www.libyj.go.kr/ojlake/lectureList.do?manageCd=ALL |
 | 5곳 | 문체부 지역축제(경기) | https://www.mcst.go.kr/site/s_culture/festival/festivalList.jsp?pSido=10 |
 | 5곳 | 뉴스 검색 | "양주 축제", "의정부 축제", "동두천 행사", "연천 축제", "포천 축제" + 이번 달·다음 달 |
@@ -40,6 +42,7 @@
 | 양주 | https://www.yangju.go.kr |
 | 의정부 | https://www.ui4u.go.kr |
 | 동두천 | https://www.ddc.go.kr/ddc/selectClturCldrTotalList.do?key=2327 (행사일정), https://www.ddc.go.kr/ddc/selectBbsNttList.do?bbsNo=25&key=105 (행사·교육) |
+| 동두천 | https://lib.ddc.go.kr (동두천시 도서관 강좌·행사) |
 | 연천 | https://www.yeoncheon.go.kr |
 | 포천 | https://www.pocheon.go.kr |
 
