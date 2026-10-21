@@ -2,6 +2,8 @@ package com.ajumma.five
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -45,8 +47,13 @@ class DetailActivity : Activity() {
         info.addView(row("날짜", e.dateText()))
         info.addView(row("시간", e.time.ifBlank { "원문에서 확인해 주세요" }))
         info.addView(row("장소", e.place.ifBlank { "원문에서 확인해 주세요" }))
+        info.addView(row("주소", e.address.ifBlank { "정확한 주소는 원문에서 확인해 주세요" }))
         info.addView(row("요금", e.fee.ifBlank { "원문에서 확인해 주세요" }))
         box.addView(info, matchWrap(dp(16)))
+
+        if (e.address.isNotBlank()) {
+            box.addView(bigButton("주소 복사하기", filled = false) { copyAddress(e.address) }, matchWrap(dp(10)))
+        }
 
         if (e.description.isNotBlank()) {
             box.addView(text(e.description, 18f), matchWrap(dp(18)))
@@ -54,9 +61,6 @@ class DetailActivity : Activity() {
 
         if (e.url.isNotBlank()) {
             box.addView(bigButton("원문 보기", filled = true) { open(Uri.parse(e.url)) }, matchWrap(dp(24)))
-        }
-        if (e.place.isNotBlank()) {
-            box.addView(bigButton("지도에서 보기", filled = false) { openMap(e.place) }, matchWrap(dp(10)))
         }
 
         setContentView(ScrollView(this).apply {
@@ -76,19 +80,17 @@ class DetailActivity : Activity() {
         ))
     }
 
-    private fun open(uri: Uri): Boolean = try {
-        startActivity(Intent(Intent.ACTION_VIEW, uri))
-        true
-    } catch (e: ActivityNotFoundException) {
-        false
+    private fun open(uri: Uri) {
+        try {
+            startActivity(Intent(Intent.ACTION_VIEW, uri))
+        } catch (e: ActivityNotFoundException) {
+            Toast.makeText(this, "원문을 열 수 없어요", Toast.LENGTH_SHORT).show()
+        }
     }
 
-    /** 네이버 지도 앱 → 다른 지도 앱 → 네이버 지도 웹 순서로 열어 봅니다. */
-    private fun openMap(place: String) {
-        val q = Uri.encode(place)
-        if (open(Uri.parse("nmap://search?query=$q&appname=$packageName"))) return
-        if (open(Uri.parse("geo:0,0?q=$q"))) return
-        if (open(Uri.parse("https://map.naver.com/p/search/$q"))) return
-        Toast.makeText(this, "지도를 열 수 없어요", Toast.LENGTH_SHORT).show()
+    private fun copyAddress(address: String) {
+        val clipboard = getSystemService(ClipboardManager::class.java)
+        clipboard.setPrimaryClip(ClipData.newPlainText("주소", address))
+        Toast.makeText(this, "주소를 복사했어요. 지도 앱에 붙여넣어 보세요.", Toast.LENGTH_LONG).show()
     }
 }

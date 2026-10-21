@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
-import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
@@ -15,12 +14,14 @@ class MainActivity : Activity() {
 
     private var data: EventList? = null
     private var category = CATEGORIES[0]
-    private var region = REGIONS[0]
+    /** 고른 지역. null이면 전체. */
+    private var region: String? = null
 
     private lateinit var updatedText: TextView
     private lateinit var statusText: TextView
     private lateinit var tabRow: LinearLayout
     private lateinit var regionRow: LinearLayout
+    private lateinit var regionHint: TextView
     private lateinit var listBox: LinearLayout
     private lateinit var scroll: ScrollView
 
@@ -30,7 +31,7 @@ class MainActivity : Activity() {
 
         val prefs = getPreferences(MODE_PRIVATE)
         category = prefs.getString("category", category)!!.takeIf { it in CATEGORIES } ?: CATEGORIES[0]
-        region = prefs.getString("region", region)!!.takeIf { it in REGIONS } ?: REGIONS[0]
+        region = prefs.getString("region", null)?.takeIf { it in REGIONS }
 
         setContentView(buildScreen())
         showData(EventStore.loadLocal(this))
@@ -69,15 +70,14 @@ class MainActivity : Activity() {
         }
         root.addView(tabRow)
 
-        // 지역 고르기
+        // 지역 고르기: 누르면 그 지역만, 한 번 더 누르면 전체
         regionRow = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
-            setPadding(dp(12), dp(8), dp(12), dp(8))
+            setPadding(dp(12), dp(8), dp(12), dp(2))
         }
-        root.addView(HorizontalScrollView(this).apply {
-            isHorizontalScrollBarEnabled = false
-            addView(regionRow)
-        })
+        root.addView(regionRow)
+        regionHint = text("", 14f, Colors.SUB).apply { setPadding(dp(20), dp(2), dp(20), dp(4)) }
+        root.addView(regionHint)
 
         statusText = text("", 15f, Colors.SUB).apply {
             setPadding(dp(20), 0, dp(20), dp(4))
@@ -120,7 +120,7 @@ class MainActivity : Activity() {
         render()
     }
 
-    private fun select(newCategory: String = category, newRegion: String = region) {
+    private fun select(newCategory: String = category, newRegion: String? = region) {
         category = newCategory
         region = newRegion
         getPreferences(MODE_PRIVATE).edit()
@@ -143,18 +143,22 @@ class MainActivity : Activity() {
         regionRow.removeAllViews()
         REGIONS.forEachIndexed { i, r ->
             regionRow.addView(
-                chip(r, r == region, 17f) { select(newRegion = r) },
-                LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT,
-                ).apply { if (i > 0) leftMargin = dp(6) },
+                chip(r, r == region, 17f) { select(newRegion = if (r == region) null else r) }.apply {
+                    setPadding(dp(2), dp(10), dp(2), dp(10))
+                },
+                LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f).apply {
+                    if (i > 0) leftMargin = dp(5)
+                },
             )
         }
+        regionHint.text = if (region == null) "전체 지역을 보고 있어요. 지역을 누르면 그 지역만 보여요."
+        else "$region 행사만 보고 있어요. 한 번 더 누르면 전체가 보여요."
 
         listBox.removeAllViews()
         val today = LocalDate.now()
         val shown = data?.events.orEmpty()
             .filter { it.category == category }
-            .filter { region == "전체" || it.region == region }
+            .filter { region == null || it.region == region }
             .filter { !it.end.isBefore(today) }
             .sortedWith(compareBy({ it.start }, { it.title }))
 
