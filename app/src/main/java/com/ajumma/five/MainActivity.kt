@@ -97,6 +97,7 @@ class MainActivity : Activity() {
     }
 
     private fun refresh() {
+        if (!networkEnabled) return
         statusText.visibility = View.VISIBLE
         statusText.text = "새 소식 확인 중…"
         Thread {
@@ -157,7 +158,7 @@ class MainActivity : Activity() {
         else "$region 행사만 보고 있어요. 한 번 더 누르면 전체가 보여요."
 
         listBox.removeAllViews()
-        val today = LocalDate.now()
+        val today = todayProvider()
         val shown = data?.events.orEmpty()
             .filter { it.category == category }
             .filter { region == null || it.region == region }

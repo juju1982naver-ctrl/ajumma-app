@@ -27,6 +27,16 @@ android {
     // 저장소의 data/events.json을 앱에도 넣어서, 처음 켤 때 인터넷이 없어도 목록이 보이게 합니다.
     sourceSets["main"].assets.srcDirs("../data")
 
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+            all {
+                it.maxHeapSize = "2g"
+                it.systemProperty("shots.dir", project.layout.buildDirectory.get().asFile.resolve("ui-shots").absolutePath)
+            }
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -35,4 +45,9 @@ android {
 
 kotlin {
     jvmToolchain(17)
+}
+
+dependencies {
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.robolectric:robolectric:4.14.1")
 }
