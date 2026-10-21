@@ -14,7 +14,7 @@ const val EVENTS_URL =
     "https://raw.githubusercontent.com/juju1982naver-ctrl/ajumma-app/main/data/events.json"
 
 val CATEGORIES = listOf("공연·전시", "체험·교육", "축제·장터")
-val REGIONS = listOf("전체", "양주", "의정부", "동두천", "연천", "포천")
+val REGIONS = listOf("양주", "의정부", "동두천", "연천", "포천")
 
 data class Event(
     val id: String,
@@ -25,6 +25,7 @@ data class Event(
     val end: LocalDate,
     val time: String,
     val place: String,
+    val address: String,
     val fee: String,
     val description: String,
     val url: String,
@@ -35,7 +36,7 @@ data class Event(
     fun toJson(): String = JSONObject()
         .put("id", id).put("category", category).put("region", region).put("title", title)
         .put("startDate", start.toString()).put("endDate", end.toString())
-        .put("time", time).put("place", place).put("fee", fee)
+        .put("time", time).put("place", place).put("address", address).put("fee", fee)
         .put("description", description).put("url", url)
         .toString()
 
@@ -52,6 +53,7 @@ data class Event(
                 end = if (endText.isBlank()) start else LocalDate.parse(endText),
                 time = o.optString("time"),
                 place = o.optString("place"),
+                address = o.optString("address"),
                 fee = o.optString("fee"),
                 description = o.optString("description"),
                 url = o.optString("url"),
