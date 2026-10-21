@@ -1,6 +1,6 @@
 """data/events.json 정리: 지난 행사 삭제, 중복 제거, 형식 검사, 날짜순 정렬, id 다시 매기기.
 
-사용법: python3 scripts/tidy_events.py [기준일 YYYY-MM-DD]
+사용법: python3 data/tidy_events.py [기준일 YYYY-MM-DD]
 기준일을 안 주면 오늘(한국 시간) 기준.
 """
 import json
@@ -9,7 +9,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-PATH = Path(__file__).resolve().parent.parent / "data" / "events.json"
+PATH = Path(__file__).resolve().parent / "events.json"
 CATEGORIES = ["공연·전시", "체험·교육", "축제·장터"]
 REGIONS = ["양주", "의정부", "동두천", "연천", "포천"]
 FIELDS = ["id", "category", "region", "title", "startDate", "endDate",
