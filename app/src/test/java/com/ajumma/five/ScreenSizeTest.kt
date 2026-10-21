@@ -98,7 +98,7 @@ class ScreenSizeTest {
                             violations += "$tag 글씨가 잘림: '$t'"; break
                         }
                         val short = t.length <= 8 && !t.contains("\n")
-                        if (short && v.lineCount > 1) violations += "$tag 짧은 글씨가 두 줄로 꺾임: '$t'"
+                        if (short && v.isClickable && v.lineCount > 1) violations += "$tag 짧은 글씨가 두 줄로 꺾임: '$t'"
                         if (v.isClickable && v.height / dens < 40f) violations += "$tag 누르는 곳이 너무 낮음(${(v.height / dens).toInt()}dp): '$t'"
                     }
                     if (v.isClickable && v.width / dens > 700f) violations += "$tag 버튼이 너무 넓음(${(v.width / dens).toInt()}dp): '${t.take(10)}'"

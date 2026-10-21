@@ -7,6 +7,8 @@ import android.content.ClipboardManager
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.Gravity
+import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.Toast
@@ -26,9 +28,11 @@ class DetailActivity : Activity() {
         }
 
         box.addView(text("←  목록으로", 18f, Colors.MAIN, bold = true).apply {
+            gravity = Gravity.CENTER_VERTICAL
+            minHeight = dp(48)
             setPadding(0, dp(8), dp(16), dp(8))
             setOnClickListener { finish() }
-        })
+        }, LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT))
 
         box.addView(text("${e.category} · ${e.region}", 15f, Colors.MAIN, bold = true).apply {
             setPadding(dp(12), dp(4), dp(12), dp(4))
@@ -65,7 +69,7 @@ class DetailActivity : Activity() {
 
         setContentView(ScrollView(this).apply {
             setBackgroundColor(Colors.BG)
-            addView(box)
+            addView(MaxWidthFrame(this@DetailActivity).apply { addView(box) }, FrameLayout.LayoutParams(-1, -2, Gravity.CENTER_HORIZONTAL))
         })
     }
 
