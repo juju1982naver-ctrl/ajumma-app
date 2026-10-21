@@ -13,6 +13,10 @@ import java.util.Locale
 const val EVENTS_URL =
     "https://raw.githubusercontent.com/juju1982naver-ctrl/ajumma-app/main/data/events.json"
 
+/** 테스트에서 오늘 날짜와 인터넷 사용을 바꿀 수 있게 열어 둔 값 */
+internal var todayProvider: () -> LocalDate = { LocalDate.now() }
+internal var networkEnabled = true
+
 val CATEGORIES = listOf("공연·전시", "체험·교육", "축제·장터")
 val REGIONS = listOf("양주", "의정부", "동두천", "연천", "포천")
 
@@ -96,6 +100,7 @@ object EventStore {
 
     /** 인터넷에서 새 목록을 받아 저장합니다. 실패하면 null. 백그라운드에서 부르세요. */
     fun fetch(context: Context): EventList? = runCatching {
+        if (!networkEnabled) return null
         val conn = (URL("$EVENTS_URL?t=${System.currentTimeMillis()}").openConnection() as HttpURLConnection).apply {
             connectTimeout = 10_000
             readTimeout = 15_000

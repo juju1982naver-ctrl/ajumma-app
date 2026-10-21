@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
+import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ScrollView
@@ -45,58 +46,79 @@ class MainActivity : Activity() {
             setBackgroundColor(Colors.BG)
         }
 
-        // 맨 위: 앱 이름 + 새로고침
+        // 맨 위: 앱 이름 + 새로고침 (배경은 화면 끝까지, 내용은 가운데로 모음)
         val header = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setBackgroundColor(Colors.MAIN)
+        }
+        val headerRow = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            setBackgroundColor(Colors.MAIN)
-            setPadding(dp(12), dp(12), dp(12), dp(12))
+            setPadding(dp(12), dp(10), dp(12), dp(10))
         }
-        header.addView(mascot(), LinearLayout.LayoutParams(dp(58), dp(58)).apply { rightMargin = dp(8) })
+        headerRow.addView(mascot(), LinearLayout.LayoutParams(dp(48), dp(48)).apply { rightMargin = dp(8) })
         val titleBox = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
-        titleBox.addView(text("수빈서아MOM 나들이", 22f, 0xFFFFFFFF.toInt(), bold = true))
-        updatedText = text("", 15f, 0xFFFFEDE7.toInt())
+        titleBox.addView(text("수빈서아MOM 나들이", headerSp(20f), 0xFFFFFFFF.toInt(), bold = true))
+        updatedText = text("", headerSp(14f), 0xFFFFEDE7.toInt())
         titleBox.addView(updatedText)
-        header.addView(titleBox, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
-        header.addView(text("새로고침", 17f, Colors.MAIN, bold = true).apply {
-            setPadding(dp(14), dp(10), dp(14), dp(10))
-            background = rounded(0xFFFFFFFF.toInt(), dp(20))
+        headerRow.addView(titleBox, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
+        headerRow.addView(text("새로고침", headerSp(16f), Colors.MAIN, bold = true).apply {
+            gravity = Gravity.CENTER
+            minHeight = dp(44)
+            setPadding(dp(12), dp(8), dp(12), dp(8))
+            background = rounded(0xFFFFFFFF.toInt(), dp(22))
             setOnClickListener { refresh() }
+        }, LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT).apply {
+            leftMargin = dp(8)
         })
+        header.addView(MaxWidthFrame(this).apply { addView(headerRow) }, centerLp())
         root.addView(header)
 
-        // 카테고리 탭 3개
-        tabRow = LinearLayout(this).apply {
-            orientation = LinearLayout.HORIZONTAL
-            setPadding(dp(12), dp(14), dp(12), dp(4))
-        }
-        root.addView(tabRow)
+        // 탭·지역·목록을 한 스크롤에 담아서, 큰 글씨/작은 폰에서도 목록이 화면 밖으로 밀려나지 않게 함
+        val body = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+
+        // 카테고리 탭 3개 (좁으면 여러 줄)
+        tabRow = LinearLayout(this).apply { setPadding(dp(12), dp(12), dp(12), dp(4)) }
+        body.addView(tabRow)
 
         // 지역 고르기: 누르면 그 지역만, 한 번 더 누르면 전체
-        regionRow = LinearLayout(this).apply {
-            orientation = LinearLayout.HORIZONTAL
-            setPadding(dp(12), dp(8), dp(12), dp(2))
-        }
-        root.addView(regionRow)
+        regionRow = LinearLayout(this).apply { setPadding(dp(12), dp(8), dp(12), dp(2)) }
+        body.addView(regionRow)
         regionHint = text("", 14f, Colors.SUB).apply { setPadding(dp(20), dp(2), dp(20), dp(4)) }
-        root.addView(regionHint)
+        body.addView(regionHint)
 
         statusText = text("", 15f, Colors.SUB).apply {
             setPadding(dp(20), 0, dp(20), dp(4))
             visibility = View.GONE
         }
-        root.addView(statusText)
+        body.addView(statusText)
 
         listBox = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(4), dp(14), dp(24))
         }
-        scroll = ScrollView(this).apply { addView(listBox) }
+        body.addView(listBox)
+        scroll = ScrollView(this).apply {
+            addView(MaxWidthFrame(this@MainActivity).apply { addView(body) }, FrameLayout.LayoutParams(-1, -2, Gravity.CENTER_HORIZONTAL))
+        }
         root.addView(scroll, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f))
         return root
     }
 
+    /** 맨 위 띠는 글씨가 아무리 커져도 1.3배까지만 커지게 함 */
+    private fun headerSp(sp: Float): Float {
+        val fs = resources.configuration.fontScale
+        return if (fs > 1.3f) sp * 1.3f / fs else sp
+    }
+
+    /** 한 줄에 쓸 수 있는 가로 폭(dp): 화면 폭과 최대 폭 중 작은 쪽에서 좌우 여백 뺀 값 */
+    private fun availDp(): Int {
+        val screen = (resources.displayMetrics.widthPixels / resources.displayMetrics.density).toInt()
+        return minOf(screen, 640) - 24
+    }
+
     private fun refresh() {
+        if (!networkEnabled) return
         statusText.visibility = View.VISIBLE
         statusText.text = "새 소식 확인 중…"
         Thread {
@@ -132,32 +154,17 @@ class MainActivity : Activity() {
     }
 
     private fun render() {
-        tabRow.removeAllViews()
-        CATEGORIES.forEachIndexed { i, c ->
-            tabRow.addView(
-                chip(c, c == category, 18f) { select(newCategory = c) },
-                LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f).apply {
-                    if (i > 0) leftMargin = dp(6)
-                },
-            )
+        fillChips(tabRow, CATEGORIES, 17f, 6, availDp()) { c ->
+            chip(c, c == category, 17f) { select(newCategory = c) }
         }
-
-        regionRow.removeAllViews()
-        REGIONS.forEachIndexed { i, r ->
-            regionRow.addView(
-                chip(r, r == region, 17f) { select(newRegion = if (r == region) null else r) }.apply {
-                    setPadding(dp(2), dp(10), dp(2), dp(10))
-                },
-                LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f).apply {
-                    if (i > 0) leftMargin = dp(5)
-                },
-            )
+        fillChips(regionRow, REGIONS, 17f, 5, availDp()) { r ->
+            chip(r, r == region, 17f) { select(newRegion = if (r == region) null else r) }
         }
         regionHint.text = if (region == null) "전체 지역을 보고 있어요. 지역을 누르면 그 지역만 보여요."
         else "$region 행사만 보고 있어요. 한 번 더 누르면 전체가 보여요."
 
         listBox.removeAllViews()
-        val today = LocalDate.now()
+        val today = todayProvider()
         val shown = data?.events.orEmpty()
             .filter { it.category == category }
             .filter { region == null || it.region == region }
