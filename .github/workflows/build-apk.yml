@@ -44,5 +44,5 @@ jobs:
         run: |
           gh release delete latest --yes --cleanup-tag || true
           gh release create latest ajumma5.apk \
-            --title "아줌마 5인방 최신 버전 (빌드 ${{ github.run_number }})" \
+            --title "수빈서아맘 나들이 최신 버전 (빌드 ${{ github.run_number }})" \
             --notes "휴대폰에서 ajumma5.apk를 눌러 받은 뒤 설치하세요."

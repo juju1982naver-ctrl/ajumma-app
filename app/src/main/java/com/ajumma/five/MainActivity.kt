@@ -54,7 +54,7 @@ class MainActivity : Activity() {
         }
         header.addView(mascot(), LinearLayout.LayoutParams(dp(58), dp(58)).apply { rightMargin = dp(8) })
         val titleBox = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
-        titleBox.addView(text("상미맘 나들이", 26f, 0xFFFFFFFF.toInt(), bold = true))
+        titleBox.addView(text("수빈서아맘 나들이", 22f, 0xFFFFFFFF.toInt(), bold = true))
         updatedText = text("", 15f, 0xFFFFEDE7.toInt())
         titleBox.addView(updatedText)
         header.addView(titleBox, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
