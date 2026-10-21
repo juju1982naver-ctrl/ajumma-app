@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import android.widget.FrameLayout
+import android.widget.HorizontalScrollView
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ScrollView
@@ -157,9 +158,22 @@ class MainActivity : Activity() {
         fillChips(tabRow, CATEGORIES, 17f, 6, availDp()) { c ->
             chip(c, c == category, 17f) { select(newCategory = c) }
         }
-        fillChips(regionRow, REGIONS, 17f, 5, availDp()) { r ->
-            chip(r, r == region, 17f) { select(newRegion = if (r == region) null else r) }
+        // 지역은 한 줄로 두고, 화면이 좁으면 옆으로 밀어서 봄
+        regionRow.removeAllViews()
+        val regionChips = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
+        REGIONS.forEachIndexed { i, r ->
+            regionChips.addView(
+                chip(r, r == region, 17f) { select(newRegion = if (r == region) null else r) },
+                LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT).apply {
+                    if (i > 0) leftMargin = dp(6)
+                },
+            )
         }
+        regionRow.addView(HorizontalScrollView(this).apply {
+            isHorizontalScrollBarEnabled = false
+            overScrollMode = View.OVER_SCROLL_NEVER
+            addView(regionChips)
+        })
         regionHint.text = if (region == null) "전체 지역을 보고 있어요. 지역을 누르면 그 지역만 보여요."
         else "$region 행사만 보고 있어요. 한 번 더 누르면 전체가 보여요."
 
