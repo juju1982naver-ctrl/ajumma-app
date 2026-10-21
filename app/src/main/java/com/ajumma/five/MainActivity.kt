@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
@@ -49,8 +50,9 @@ class MainActivity : Activity() {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
             setBackgroundColor(Colors.MAIN)
-            setPadding(dp(20), dp(16), dp(12), dp(16))
+            setPadding(dp(12), dp(12), dp(12), dp(12))
         }
+        header.addView(mascot(), LinearLayout.LayoutParams(dp(58), dp(58)).apply { rightMargin = dp(8) })
         val titleBox = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         titleBox.addView(text("상미맘 나들이", 26f, 0xFFFFFFFF.toInt(), bold = true))
         updatedText = text("", 15f, 0xFFFFEDE7.toInt())
@@ -163,10 +165,14 @@ class MainActivity : Activity() {
             .sortedWith(compareBy({ it.start }, { it.title }))
 
         if (shown.isEmpty()) {
+            listBox.addView(mascot(), LinearLayout.LayoutParams(dp(120), dp(120)).apply {
+                gravity = Gravity.CENTER_HORIZONTAL
+                topMargin = dp(40)
+            })
             listBox.addView(
                 text("이 지역에는 아직 등록된 행사가 없어요.\n다른 지역이나 탭을 눌러 보세요.", 18f, Colors.SUB).apply {
                     gravity = Gravity.CENTER
-                    setPadding(dp(16), dp(48), dp(16), dp(48))
+                    setPadding(dp(16), dp(12), dp(16), dp(48))
                 },
                 matchWrap(),
             )
@@ -193,5 +199,12 @@ class MainActivity : Activity() {
         setOnClickListener {
             startActivity(Intent(this@MainActivity, DetailActivity::class.java).putExtra("event", e.toJson()))
         }
+    }
+
+    /** 수빈·서아 나비 캐릭터 */
+    private fun mascot() = ImageView(this).apply {
+        setImageResource(R.drawable.mascot)
+        scaleType = ImageView.ScaleType.FIT_CENTER
+        contentDescription = "수빈 서아 나비"
     }
 }
