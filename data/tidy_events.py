@@ -1,10 +1,13 @@
 """data/events.json 정리: 지난 행사 삭제, 중복 제거, 형식 검사, 날짜순 정렬, id 다시 매기기.
 
-사용법: python3 data/tidy_events.py [기준일 YYYY-MM-DD]
+사용법: python3 data/tidy_events.py [기준일 YYYY-MM-DD] [--force]
 기준일을 안 주면 오늘(한국 시간) 기준.
+안전장치: 정리 뒤 남은 행사가 20건 미만이거나 직전 커밋 목록의 절반 미만이면
+파일을 쓰지 않고 실패한다(--force로 무시).
 """
 import json
 import re
+import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -22,8 +25,22 @@ def key(e):
     return (e["region"], title, e["startDate"])
 
 
+MIN_EVENTS = 20
+
+
+def committed_count():
+    try:
+        out = subprocess.run(["git", "show", "HEAD:data/events.json"], cwd=PATH.parent,
+                             capture_output=True, text=True, check=True).stdout
+        return len(json.loads(out)["events"])
+    except Exception:
+        return 0
+
+
 def main():
-    today = sys.argv[1] if len(sys.argv) > 1 else \
+    args = [a for a in sys.argv[1:] if a != "--force"]
+    force = "--force" in sys.argv
+    today = args[0] if args else \
         datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     data = json.loads(PATH.read_text(encoding="utf-8"))
     errors, kept, seen = [], [], set()
@@ -55,6 +72,10 @@ def main():
     if errors:
         print("형식 오류:\n  " + "\n  ".join(errors))
         sys.exit(1)
+    before = committed_count()
+    if not force and (len(kept) < MIN_EVENTS or len(kept) < before / 2):
+        print(f"안전장치: 남은 행사 {len(kept)}건 (직전 {before}건). 너무 많이 줄어 파일을 쓰지 않았습니다.")
+        sys.exit(2)
     kept.sort(key=lambda e: (REGIONS.index(e["region"]), e["startDate"], e["title"]))
     for i, e in enumerate(kept, 1):
         e["id"] = f"{e['region']}-{i}"
