@@ -85,11 +85,11 @@ class ScreenSizeTest {
 
     private fun check(label: String, d: Dev, fs: Float, root: View, wpx: Int, dens: Float) {
         val tag = "[${d.name} 글자x$fs $label]"
-        fun walk(v: View) {
+        fun walk(v: View, inH: Boolean = false) {
             val loc = IntArray(2)
             v.getLocationInWindow(loc)
             if (v.visibility == View.VISIBLE && v.width > 0) {
-                if (loc[0] + v.width > wpx + 1 || loc[0] < -1) violations += "$tag 가로로 넘침: ${desc(v)}"
+                if (!inH && (loc[0] + v.width > wpx + 1 || loc[0] < -1)) violations += "$tag 가로로 넘침: ${desc(v)}"
                 if (v is TextView) {
                     val t = v.text.toString()
                     val lay = v.layout
@@ -104,7 +104,7 @@ class ScreenSizeTest {
                     if (v.isClickable && v.width / dens > 700f) violations += "$tag 버튼이 너무 넓음(${(v.width / dens).toInt()}dp): '${t.take(10)}'"
                 }
             }
-            if (v is ViewGroup) for (i in 0 until v.childCount) walk(v.getChildAt(i))
+            if (v is ViewGroup) for (i in 0 until v.childCount) walk(v.getChildAt(i), inH || v is android.widget.HorizontalScrollView)
         }
         walk(root)
     }
