@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 상미맘 캐릭터: 선으로 그린 픽토그램 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- 달력 몸통 -->
-    <path android:fillColor="#FFFFFF"
-        android:pathData="M36,38h36a4,4 0,0 1,4 4v28a4,4 0,0 1,-4 4h-36a4,4 0,0 1,-4 -4v-28a4,4 0,0 1,4 -4z" />
-    <!-- 윗줄 -->
-    <path android:fillColor="#FFD9CF"
-        android:pathData="M36,38h36a4,4 0,0 1,4 4v6h-44v-6a4,4 0,0 1,4 -4z" />
-    <!-- 고리 -->
-    <path android:fillColor="#FFFFFF"
-        android:pathData="M42,32h4v10h-4z M62,32h4v10h-4z" />
-    <!-- 점 다섯 개 = 다섯 명 -->
-    <path android:fillColor="#E8664A"
-        android:pathData="M39,56a3,3 0,1 1,6 0a3,3 0,1 1,-6 0z M51,56a3,3 0,1 1,6 0a3,3 0,1 1,-6 0z M63,56a3,3 0,1 1,6 0a3,3 0,1 1,-6 0z M45,66a3,3 0,1 1,6 0a3,3 0,1 1,-6 0z M57,66a3,3 0,1 1,6 0a3,3 0,1 1,-6 0z" />
+    <group android:translateX="20.4" android:translateY="19.6" android:scaleX="1.4" android:scaleY="1.4">
+        <!-- 얼굴 -->
+        <path android:strokeColor="#FFFFFF" android:strokeWidth="2.4" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:pathData="M12,26a12,12 0 1,0 24,0a12,12 0 1,0 -24,0" />
+        <!-- 똥머리 -->
+        <path android:strokeColor="#FFFFFF" android:strokeWidth="2.4" android:strokeLineCap="round"
+            android:pathData="M20.2,10.6a3.8,3.8 0 1,1 7.6,0a3.8,3.8 0 1,1 -7.6,0" />
+        <!-- 앞머리 -->
+        <path android:strokeColor="#FFFFFF" android:strokeWidth="2.4" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:pathData="M13.6,21.5Q18.5,15.8 24,18.6Q29.5,15.8 34.4,21.5" />
+        <!-- 볼터치 -->
+        <path android:fillColor="#FFB09E"
+            android:pathData="M15,30.6a1.8,1.8 0 1,0 3.6,0a1.8,1.8 0 1,0 -3.6,0 M29.4,30.6a1.8,1.8 0 1,0 3.6,0a1.8,1.8 0 1,0 -3.6,0" />
+        <!-- 눈 -->
+        <path android:fillColor="#FFFFFF"
+            android:pathData="M18.1,26.6a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0 M26.9,26.6a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0" />
+        <!-- 웃는 입 -->
+        <path android:strokeColor="#FFFFFF" android:strokeWidth="2.2" android:strokeLineCap="round"
+            android:pathData="M20.8,31.2Q24,34.4 27.2,31.2" />
+    </group>
 </vector>

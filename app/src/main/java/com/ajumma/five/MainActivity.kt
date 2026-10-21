@@ -52,7 +52,7 @@ class MainActivity : Activity() {
             setPadding(dp(20), dp(16), dp(12), dp(16))
         }
         val titleBox = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
-        titleBox.addView(text("아줌마 5인방", 26f, 0xFFFFFFFF.toInt(), bold = true))
+        titleBox.addView(text("상미맘 나들이", 26f, 0xFFFFFFFF.toInt(), bold = true))
         updatedText = text("", 15f, 0xFFFFEDE7.toInt())
         titleBox.addView(updatedText)
         header.addView(titleBox, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
