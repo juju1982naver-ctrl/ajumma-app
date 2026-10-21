@@ -75,16 +75,19 @@ class MainActivity : Activity() {
         header.addView(MaxWidthFrame(this).apply { addView(headerRow) }, centerLp())
         root.addView(header)
 
-        // 탭·지역·목록을 한 스크롤에 담아서, 큰 글씨/작은 폰에서도 목록이 화면 밖으로 밀려나지 않게 함
+        // 카테고리 탭과 지역 버튼은 목록을 스크롤해도 위에 고정 (큰 글씨에서도 1.3배까지만 커짐)
+        val fixed = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setBackgroundColor(Colors.BG)
+        }
+        tabRow = LinearLayout(this).apply { setPadding(dp(12), dp(10), dp(12), dp(2)) }
+        fixed.addView(tabRow)
+        regionRow = LinearLayout(this).apply { setPadding(dp(12), dp(6), dp(12), dp(6)) }
+        fixed.addView(regionRow)
+        root.addView(MaxWidthFrame(this).apply { addView(fixed) }, centerLp())
+
+        // 안내 문구와 행사 목록만 스크롤
         val body = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
-
-        // 카테고리 탭 3개 (좁으면 여러 줄)
-        tabRow = LinearLayout(this).apply { setPadding(dp(12), dp(12), dp(12), dp(4)) }
-        body.addView(tabRow)
-
-        // 지역 고르기: 누르면 그 지역만, 한 번 더 누르면 전체
-        regionRow = LinearLayout(this).apply { setPadding(dp(12), dp(8), dp(12), dp(2)) }
-        body.addView(regionRow)
         regionHint = text("", 14f, Colors.SUB).apply { setPadding(dp(20), dp(2), dp(20), dp(4)) }
         body.addView(regionHint)
 
@@ -106,7 +109,7 @@ class MainActivity : Activity() {
         return root
     }
 
-    /** 맨 위 띠는 글씨가 아무리 커져도 1.3배까지만 커지게 함 */
+    /** 맨 위 띠와 고정된 버튼은 글씨가 아무리 커져도 1.3배까지만 커지게 함 */
     private fun headerSp(sp: Float): Float {
         val fs = resources.configuration.fontScale
         return if (fs > 1.3f) sp * 1.3f / fs else sp
@@ -155,15 +158,15 @@ class MainActivity : Activity() {
     }
 
     private fun render() {
-        fillChips(tabRow, CATEGORIES, 17f, 6, availDp()) { c ->
-            chip(c, c == category, 17f) { select(newCategory = c) }
+        fillChips(tabRow, CATEGORIES, headerSp(17f), 6, availDp()) { c ->
+            chip(c, c == category, headerSp(17f)) { select(newCategory = c) }
         }
         // 지역은 한 줄로 두고, 화면이 좁으면 옆으로 밀어서 봄
         regionRow.removeAllViews()
         val regionChips = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         REGIONS.forEachIndexed { i, r ->
             regionChips.addView(
-                chip(r, r == region, 17f) { select(newRegion = if (r == region) null else r) },
+                chip(r, r == region, headerSp(17f)) { select(newRegion = if (r == region) null else r) },
                 LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT).apply {
                     if (i > 0) leftMargin = dp(6)
                 },
