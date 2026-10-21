@@ -6,7 +6,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="상미맘 나들이"
+        android:label="수빈서아MOM 나들이"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
         <activity
