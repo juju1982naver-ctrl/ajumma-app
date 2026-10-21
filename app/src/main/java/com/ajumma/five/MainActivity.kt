@@ -58,11 +58,11 @@ class MainActivity : Activity() {
         }
         headerRow.addView(mascot(), LinearLayout.LayoutParams(dp(48), dp(48)).apply { rightMargin = dp(8) })
         val titleBox = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
-        titleBox.addView(text("수빈서아MOM 나들이", 20f, 0xFFFFFFFF.toInt(), bold = true))
-        updatedText = text("", 14f, 0xFFFFEDE7.toInt())
+        titleBox.addView(text("수빈서아MOM 나들이", headerSp(20f), 0xFFFFFFFF.toInt(), bold = true))
+        updatedText = text("", headerSp(14f), 0xFFFFEDE7.toInt())
         titleBox.addView(updatedText)
         headerRow.addView(titleBox, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
-        headerRow.addView(text("새로고침", 16f, Colors.MAIN, bold = true).apply {
+        headerRow.addView(text("새로고침", headerSp(16f), Colors.MAIN, bold = true).apply {
             gravity = Gravity.CENTER
             minHeight = dp(44)
             setPadding(dp(12), dp(8), dp(12), dp(8))
@@ -74,6 +74,7 @@ class MainActivity : Activity() {
         header.addView(MaxWidthFrame(this).apply { addView(headerRow) }, centerLp())
         root.addView(header)
 
+        // 탭·지역·목록을 한 스크롤에 담아서, 큰 글씨/작은 폰에서도 목록이 화면 밖으로 밀려나지 않게 함
         val body = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
 
         // 카테고리 탭 3개 (좁으면 여러 줄)
@@ -96,11 +97,18 @@ class MainActivity : Activity() {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(4), dp(14), dp(24))
         }
-        scroll = ScrollView(this).apply { addView(listBox) }
-        body.addView(scroll, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f))
-
-        root.addView(MaxWidthFrame(this).apply { addView(body, FrameLayout.LayoutParams(-1, -1)) }, centerLp(height = 0, weight = 1f))
+        body.addView(listBox)
+        scroll = ScrollView(this).apply {
+            addView(MaxWidthFrame(this@MainActivity).apply { addView(body) }, FrameLayout.LayoutParams(-1, -2, Gravity.CENTER_HORIZONTAL))
+        }
+        root.addView(scroll, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f))
         return root
+    }
+
+    /** 맨 위 띠는 글씨가 아무리 커져도 1.3배까지만 커지게 함 */
+    private fun headerSp(sp: Float): Float {
+        val fs = resources.configuration.fontScale
+        return if (fs > 1.3f) sp * 1.3f / fs else sp
     }
 
     /** 한 줄에 쓸 수 있는 가로 폭(dp): 화면 폭과 최대 폭 중 작은 쪽에서 좌우 여백 뺀 값 */
