@@ -42,6 +42,7 @@
 | 양주 | https://www.yangju.go.kr |
 | 의정부 | https://www.ui4u.go.kr |
 | 동두천 | https://www.ddc.go.kr/ddc/selectClturCldrTotalList.do?key=2327 (행사일정), https://www.ddc.go.kr/ddc/selectBbsNttList.do?bbsNo=25&key=105 (행사·교육) |
+| 동두천 | https://lib.ddc.go.kr (동두천시 도서관 강좌·행사) |
 | 연천 | https://www.yeoncheon.go.kr |
 | 포천 | https://www.pocheon.go.kr |
 
