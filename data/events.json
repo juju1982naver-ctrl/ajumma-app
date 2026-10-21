@@ -506,7 +506,35 @@
    "url": "https://www.vision21.kr/news/article.html?no=630073"
   },
   {
-   "id": "연천-37",
+   "id": "동두천-37",
+   "category": "축제·장터",
+   "region": "동두천",
+   "title": "제38회 소요단풍문화제",
+   "startDate": "2026-10-31",
+   "endDate": "2026-10-31",
+   "time": "",
+   "place": "소요산 야외음악당",
+   "address": "",
+   "fee": "",
+   "description": "단풍 든 소요산에서 열리는 동두천 대표 가을 축제예요. 무대 공연과 체험 행사가 열리고, 조선 시대 어유소 장군의 승전 행차를 재현하는 행렬(제17회)도 볼 수 있어요. 같은 날 동두천 책문화축제도 있어서 하루 나들이로 묶기 좋아요. 시간과 요금은 아직 안내가 없어 가기 전 확인하세요. 문의 031-860-2063.",
+   "url": "https://www.ddc.go.kr/tour/contents.do?key=266"
+  },
+  {
+   "id": "동두천-38",
+   "category": "체험·교육",
+   "region": "동두천",
+   "title": "경기북부어린이박물관 다시 문 열어요 (2층 전시실만)",
+   "startDate": "2026-11-10",
+   "endDate": "2026-12-10",
+   "time": "월요일 휴관",
+   "place": "경기북부어린이박물관 2층",
+   "address": "",
+   "fee": "무료",
+   "description": "공룡숲 개편 공사로 쉬던 경기북부어린이박물관이 11월 10일 다시 문을 열어요. 재개관 뒤 약 한 달은 2층 전시실(자연숲·오감숲)만 운영하고, 1층 전시실·카페·야외놀이터는 이용할 수 없어요. 전체 운영은 12월 중순쯤 다시 시작할 예정이라 날짜는 박물관 공지를 확인하세요. 문의 031-868-9610.",
+   "url": "https://ngcm.ggcf.kr/boards/news/articles/633"
+  },
+  {
+   "id": "연천-39",
    "category": "공연·전시",
    "region": "연천",
    "title": "전곡선사박물관 개관 15주년 기념전 〈땅속의 땅, 전곡〉",
@@ -520,7 +548,7 @@
    "url": "https://jgpm.ggcf.kr/exhibitions/112"
   },
   {
-   "id": "연천-38",
+   "id": "연천-40",
    "category": "체험·교육",
    "region": "연천",
    "title": "초대형 석기의 세 가지 비밀",
@@ -534,7 +562,7 @@
    "url": "https://jgpm.ggcf.kr/edus/377"
   },
   {
-   "id": "연천-39",
+   "id": "연천-41",
    "category": "공연·전시",
    "region": "연천",
    "title": "전곡선사박물관 틈새전 〈AI 오답노트〉",
@@ -548,7 +576,7 @@
    "url": "https://jgpm.ggcf.kr/exhibitions/113"
   },
   {
-   "id": "연천-40",
+   "id": "연천-42",
    "category": "체험·교육",
    "region": "연천",
    "title": "10월 일일캠프 〈전곡리안의 하루〉",
@@ -562,7 +590,7 @@
    "url": "https://jgpm.ggcf.kr/edus/382"
   },
   {
-   "id": "연천-41",
+   "id": "연천-43",
    "category": "체험·교육",
    "region": "연천",
    "title": "독서소품 만들기 원데이 클래스: 망뜨개 티 코스터",
@@ -576,7 +604,7 @@
    "url": "https://library.yeoncheon.go.kr/menu/10051/program/30013/lectureList.do"
   },
   {
-   "id": "연천-42",
+   "id": "연천-44",
    "category": "축제·장터",
    "region": "연천",
    "title": "제8회 연천 국화축제",
@@ -590,7 +618,7 @@
    "url": "https://www.mcst.go.kr/site/s_culture/festival/festivalView.jsp?pSeq=13334&pRo=1"
   },
   {
-   "id": "연천-43",
+   "id": "연천-45",
    "category": "공연·전시",
    "region": "연천",
    "title": "빛의 여정 - 서광자 첫 개인전",
@@ -604,7 +632,7 @@
    "url": "https://yccs.or.kr/pub/perform/18617.do"
   },
   {
-   "id": "연천-44",
+   "id": "연천-46",
    "category": "공연·전시",
    "region": "연천",
    "title": "수수콘 Vol.3 탱고 살롱",
@@ -618,7 +646,7 @@
    "url": "https://yccs.or.kr/pub/perform/18411.do"
   },
   {
-   "id": "연천-45",
+   "id": "연천-47",
    "category": "공연·전시",
    "region": "연천",
    "title": "CGV 연천수레울아트홀 영화 상영",
@@ -632,7 +660,7 @@
    "url": "https://yccs.or.kr/pub/perform/18633.do"
   },
   {
-   "id": "연천-46",
+   "id": "연천-48",
    "category": "축제·장터",
    "region": "연천",
    "title": "연천 율무축제",
@@ -646,7 +674,35 @@
    "url": "https://www.mcst.go.kr/site/s_culture/festival/festivalView.jsp?pSeq=11950&pRo=3"
   },
   {
-   "id": "연천-47",
+   "id": "연천-49",
+   "category": "축제·장터",
+   "region": "연천",
+   "title": "제15회 미수문화제",
+   "startDate": "2026-10-24",
+   "endDate": "2026-10-24",
+   "time": "오후 1시 개회식",
+   "place": "연천역 광장",
+   "address": "",
+   "fee": "",
+   "description": "연천의 옛 학자 미수 허목 선생을 기리는 연천 지역 문화제예요. 연천군 주간행사계획에 10월 24일 오후 1시 연천역 광장 개회식으로 올라와 있어요. 프로그램·요금은 아직 안내가 없어서 가기 전에 확인하는 게 좋아요. 문의 연천군청 문화체육과(대표 031-839-2114).",
+   "url": "https://www.yeoncheon.go.kr/www/selectBbsNttView.do?key=3387&bbsNo=9&nttNo=109657"
+  },
+  {
+   "id": "연천-50",
+   "category": "체험·교육",
+   "region": "연천",
+   "title": "한반도통일미래센터 개방행사",
+   "startDate": "2026-10-24",
+   "endDate": "2026-10-24",
+   "time": "오전 10시",
+   "place": "한반도통일미래센터",
+   "address": "",
+   "fee": "",
+   "description": "통일부 한반도통일미래센터가 일반인에게 문을 여는 날이에요. 연천군 주간행사계획에 10월 24일 오전 10시로 올라와 있어요. 지난 개방행사들은 따로 신청 없이 방문할 수 있었지만, 이번 프로그램과 신청 방법은 센터 누리집에서 꼭 확인하고 가세요.",
+   "url": "https://www.yeoncheon.go.kr/www/selectBbsNttView.do?key=3387&bbsNo=9&nttNo=109657"
+  },
+  {
+   "id": "연천-51",
    "category": "공연·전시",
    "region": "연천",
    "title": "발레 〈명성황후〉",
@@ -660,7 +716,7 @@
    "url": "https://yccs.or.kr/pub/perform/18595.do"
   },
   {
-   "id": "연천-48",
+   "id": "연천-52",
    "category": "체험·교육",
    "region": "연천",
    "title": "11월 일일캠프 〈전곡리안의 하루〉",
@@ -674,7 +730,7 @@
    "url": "https://jgpm.ggcf.kr/edus/384"
   },
   {
-   "id": "연천-49",
+   "id": "연천-53",
    "category": "공연·전시",
    "region": "연천",
    "title": "전통공연 〈추는 사람〉",
@@ -688,7 +744,7 @@
    "url": "https://yccs.or.kr/pub/perform/18611.do"
   },
   {
-   "id": "포천-50",
+   "id": "포천-54",
    "category": "체험·교육",
    "region": "포천",
    "title": "포천38문화예술창작소 문화예술교육",
@@ -702,7 +758,7 @@
    "url": "https://www.pcfac.or.kr/sub03/sub06-1.php"
   },
   {
-   "id": "포천-51",
+   "id": "포천-55",
    "category": "체험·교육",
    "region": "포천",
    "title": "생활밀착형 문화예술교육 '가가호호(家家好好)'",
@@ -716,7 +772,7 @@
    "url": "https://www.pcfac.or.kr/sub03/sub06-1.php"
   },
   {
-   "id": "포천-52",
+   "id": "포천-56",
    "category": "축제·장터",
    "region": "포천",
    "title": "2026 포천 한탄강 가든페스타",
@@ -730,7 +786,7 @@
    "url": "https://www.wikitree.co.kr/articles/1157739"
   },
   {
-   "id": "포천-53",
+   "id": "포천-57",
    "category": "공연·전시",
    "region": "포천",
    "title": "[동네북의 날] 연극배우가 읽어주는 낭독극 '순례주택'",
@@ -744,7 +800,7 @@
    "url": "https://lib.pocheon.go.kr/center/menu/10134/program/30014/lectureList.do"
   },
   {
-   "id": "포천-54",
+   "id": "포천-58",
    "category": "공연·전시",
    "region": "포천",
    "title": "책 읽어주는 마술사의 마술책방 공연",
@@ -758,7 +814,7 @@
    "url": "https://lib.pocheon.go.kr/center/menu/10134/program/30014/lectureList.do"
   },
   {
-   "id": "포천-55",
+   "id": "포천-59",
    "category": "공연·전시",
    "region": "포천",
    "title": "한국현대미술전시",
@@ -772,7 +828,7 @@
    "url": "https://www.pcfac.or.kr/sub02/sub01-1.php"
   },
   {
-   "id": "포천-56",
+   "id": "포천-60",
    "category": "공연·전시",
    "region": "포천",
    "title": "포도당 선정단체 전시 '서포트 제너레이션'",
@@ -786,7 +842,7 @@
    "url": "https://www.pcfac.or.kr/sub02/sub01-1.php"
   },
   {
-   "id": "포천-57",
+   "id": "포천-61",
    "category": "축제·장터",
    "region": "포천",
    "title": "포천 운악산 단풍축제",
@@ -800,7 +856,7 @@
    "url": "https://www.fnnews.com/news/202610151012244816"
   },
   {
-   "id": "포천-58",
+   "id": "포천-62",
    "category": "공연·전시",
    "region": "포천",
    "title": "포도당 선정 예술인 전시 '숨쉬는포천 드로잉로그_이신유'",
@@ -814,7 +870,7 @@
    "url": "https://www.pcfac.or.kr/sub02/sub01-1.php"
   },
   {
-   "id": "포천-59",
+   "id": "포천-63",
    "category": "축제·장터",
    "region": "포천",
    "title": "2026 일동 3악장 FESTA",
@@ -828,7 +884,7 @@
    "url": "https://www.fnnews.com/news/202610151012244816"
   },
   {
-   "id": "포천-60",
+   "id": "포천-64",
    "category": "공연·전시",
    "region": "포천",
    "title": "가족뮤지컬 〈더 스토리 오브 언더더씨〉",
@@ -842,7 +898,7 @@
    "url": "https://www.pcfac.or.kr/sub02/sub01-1.php"
   },
   {
-   "id": "포천-61",
+   "id": "포천-65",
    "category": "축제·장터",
    "region": "포천",
    "title": "포동 청소년 축제",
@@ -856,7 +912,7 @@
    "url": "https://www.fnnews.com/news/202610151012244816"
   },
   {
-   "id": "포천-62",
+   "id": "포천-66",
    "category": "축제·장터",
    "region": "포천",
    "title": "2026 포천 펫스타 in 아트밸리",
@@ -870,7 +926,7 @@
    "url": "https://www.fnnews.com/news/202610151012244816"
   },
   {
-   "id": "포천-63",
+   "id": "포천-67",
    "category": "공연·전시",
    "region": "포천",
    "title": "국립심포니콘서트오케스트라 - 드보르자크 교향곡 9번 '신세계로부터'",
@@ -884,7 +940,7 @@
    "url": "https://www.pcfac.or.kr/sub02/sub01-1.php"
   },
   {
-   "id": "포천-64",
+   "id": "포천-68",
    "category": "공연·전시",
    "region": "포천",
    "title": "이금희와 함께하는 오후 2시 〈다정한 클래식〉 - 미리메리크리스마스",
