@@ -205,6 +205,6 @@ class MainActivity : Activity() {
     private fun mascot() = ImageView(this).apply {
         setImageResource(R.drawable.mascot)
         scaleType = ImageView.ScaleType.FIT_CENTER
-        contentDescription = "수빈 서아 나비"
+        contentDescription = "풍선 든 여자아이"
     }
 }
