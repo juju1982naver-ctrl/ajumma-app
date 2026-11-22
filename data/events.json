@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-23",
  "events": [
   {
    "id": "양주-1",
@@ -19,20 +19,6 @@
    "id": "양주-2",
    "category": "체험·교육",
    "region": "양주",
-   "title": "책이랑 놀자 (11월, 옥정호수도서관)",
-   "startDate": "2026-11-03",
-   "endDate": "2026-11-20",
-   "time": "수업: 2026-11-21(토) 오전 11시 ~ 12시",
-   "place": "옥정호수도서관 3층 문화강좌실",
-   "address": "경기도 양주시 옥정동로7길 110 (옥정호수도서관)",
-   "fee": "",
-   "description": "5~7세(2020~2022년생) 아이들이 율동하고 동화구연을 듣고 그림 그리기 독후활동을 하는 재능기부 수업이에요. 11월 책은 「오싹오싹 크레용」이에요. 위 날짜는 신청 기간이고 20명 선착순, 아이만 참여해요. 부모가 대신 신청할 때는 아이 이름과 나이를 꼭 적어 주세요. 문의 031-8082-7471.",
-   "url": "https://www.libyj.go.kr/ojlake/lectureList.do?manageCd=ALL"
-  },
-  {
-   "id": "양주-3",
-   "category": "체험·교육",
-   "region": "양주",
    "title": "디지털 AI 시대, 인간을 이해하고 사회적 독서 생활하며 성장하다 (덕정도서관)",
    "startDate": "2026-11-10",
    "endDate": "2026-12-12",
@@ -44,7 +30,7 @@
    "url": "https://www.libyj.go.kr/ojlake/lectureList.do?manageCd=ALL"
   },
   {
-   "id": "양주-4",
+   "id": "양주-3",
    "category": "공연·전시",
    "region": "양주",
    "title": "연말, 덕정도서관에서 펼쳐지는 인문학 상상 콘서트",
@@ -58,7 +44,7 @@
    "url": "https://www.libyj.go.kr/ojlake/lectureList.do?manageCd=ALL"
   },
   {
-   "id": "양주-5",
+   "id": "양주-4",
    "category": "체험·교육",
    "region": "양주",
    "title": "유럽 민속문학 독서 여행 - 이야기와 그림으로 만나는 삶, 문학, 세대",
@@ -72,7 +58,7 @@
    "url": "https://www.libyj.go.kr/ojlake/lectureList.do?manageCd=ALL"
   },
   {
-   "id": "양주-6",
+   "id": "양주-5",
    "category": "체험·교육",
    "region": "양주",
    "title": "북북책동아리 - 그림책과 함께하는 책놀이 (12월)",
@@ -86,7 +72,7 @@
    "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7620"
   },
   {
-   "id": "양주-7",
+   "id": "양주-6",
    "category": "공연·전시",
    "region": "양주",
    "title": "도서관에서 만나는 몽글몽글 마술쇼 (양주희망도서관)",
@@ -98,6 +84,20 @@
    "fee": "무료",
    "description": "그림자극, 버블쇼, 레이저쇼, 마술이 함께 나오는 어린이 공연이에요. 대상은 7세~초등학생이고 어린이만 들어가서 보는 공연이에요. 위 날짜는 신청 기간이고 11월 19일(목) 10시부터 홈페이지나 전화로 선착순 150명 받아요. 문의 031-8082-7461.",
    "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7621"
+  },
+  {
+   "id": "양주-7",
+   "category": "공연·전시",
+   "region": "양주",
+   "title": "예원예술대학교 뮤지컬 갈라 공연 『뮤지컬, 마음을 잇다』",
+   "startDate": "2026-11-20",
+   "endDate": "2026-12-10",
+   "time": "공연 12월 12일(토) 오후 3시 30분 ~ 5시",
+   "place": "옥정호수도서관 3층 예술극장",
+   "address": "경기도 양주시 옥정동로7길 110 (옥정호수도서관)",
+   "fee": "무료",
+   "description": "예원예술대학교 학생들이 레미제라블, 하데스타운, 렌트 같은 유명 뮤지컬 노래를 한자리에서 들려주는 갈라콘서트예요. 위 날짜는 신청 기간이고, 공연은 12월 12일(토) 오후에 해요. 양주시민 150명 선착순이라 양주시도서관 홈페이지에서 미리 신청해야 하고, 가족이 같이 가면 로그인 후 동반 인원 수를 넣으면 돼요.",
+   "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7640"
   },
   {
    "id": "양주-8",
@@ -145,46 +145,18 @@
    "id": "의정부-11",
    "category": "공연·전시",
    "region": "의정부",
-   "title": "20회 회원정기전 GIACA",
-   "startDate": "2026-11-13",
-   "endDate": "2026-11-19",
-   "time": "오전 10시 ~ 오후 5시 30분",
+   "title": "제24회 대한민국아카데미미술대전",
+   "startDate": "2026-11-20",
+   "endDate": "2026-11-26",
+   "time": "오전 10시 ~ 오후 6시 (20일·마지막 날은 설치·철수로 시간 바뀔 수 있음)",
    "place": "의정부예술의전당 전시장 전관",
    "address": "경기도 의정부시 의정로 1 (의정부예술의전당)",
    "fee": "무료",
-   "description": "미술 단체 GIACA의 20번째 회원 정기 전시예요. 무료로 둘러볼 수 있어요. 첫날(13일)과 마지막 날(19일)은 설치·철수 때문에 관람 시간이 바뀔 수 있으니 전화로 확인하고 가요. 문의 010-2720-2922.",
-   "url": "https://www.uac.or.kr/newuac/performance/performance_04D.php?EXB_CODE=202611120941136"
+   "description": "의정부예술의전당 전시장 전관에서 열리는 미술대전 전시예요. 입장료가 없어서 공연 보러 가거나 근처 들를 때 아이랑 그림 구경하기 좋아요. 첫날과 마지막 날은 작품 설치·철수 때문에 관람 시간이 바뀔 수 있으니 미리 전화로 확인하고 가세요. 문의 02-734-4460.",
+   "url": "https://www.uac.or.kr/newuac/performance/performance_04D.php?EXB_CODE=202611191704267"
   },
   {
    "id": "의정부-12",
-   "category": "공연·전시",
-   "region": "의정부",
-   "title": "THE 피아니스트 제1회 정기연주회",
-   "startDate": "2026-11-21",
-   "endDate": "2026-11-21",
-   "time": "오후 5시 (80분)",
-   "place": "의정부예술의전당 소극장",
-   "address": "경기도 의정부시 의정로 1 (의정부예술의전당)",
-   "fee": "무료",
-   "description": "피아노 연주 모임 'THE 피아니스트'의 첫 정기연주회예요. 7세 이상 볼 수 있는 무료 공연이라 피아노 배우는 아이와 같이 가 보기 좋아요. 자세한 곡목은 재단 홈페이지 상세 페이지에서 확인해요. 문의 010-7337-6434.",
-   "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611130930047"
-  },
-  {
-   "id": "의정부-13",
-   "category": "공연·전시",
-   "region": "의정부",
-   "title": "연극 〈불편한 편의점〉",
-   "startDate": "2026-11-21",
-   "endDate": "2026-11-21",
-   "time": "오후 3시 (100분, 쉬는 시간 없음)",
-   "place": "의정부예술의전당 대극장",
-   "address": "경기도 의정부시 의정로 1 (의정부예술의전당)",
-   "fee": "전석 4만 원",
-   "description": "김호연 작가의 베스트셀러 소설을 연극으로 만든 작품이에요. 서울역 노숙인이던 '독고'가 동네 편의점 야간 알바를 하면서 손님들과 엮이는 따뜻하고 웃긴 이야기예요. 만 7세 이상 관람할 수 있어요. 예매는 의정부문화관광재단 홈페이지에서 회원 로그인 후 할 수 있어요. 월요일과 일요일·공휴일에는 전화·방문 예매가 안 돼요. 재단 대표 문의 031-828-5841.",
-   "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202609011656266"
-  },
-  {
-   "id": "의정부-14",
    "category": "공연·전시",
    "region": "의정부",
    "title": "11월의 크리스마스 콘서트 - 로열 콘세르트헤바우 오케스트라 브라스 앙상블",
@@ -198,7 +170,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202609011701196"
   },
   {
-   "id": "의정부-15",
+   "id": "의정부-13",
    "category": "공연·전시",
    "region": "의정부",
    "title": "음악이 흐르는 북토크 의정부ㄱ콘서트 (11월)",
@@ -212,7 +184,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611101720108"
   },
   {
-   "id": "의정부-16",
+   "id": "의정부-14",
    "category": "공연·전시",
    "region": "의정부",
    "title": "창작 뮤지컬 경기틴즈 〈경험대여소〉",
@@ -226,7 +198,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611101723095"
   },
   {
-   "id": "의정부-17",
+   "id": "의정부-15",
    "category": "공연·전시",
    "region": "의정부",
    "title": "이은미 콘서트 with 오케스트라 '추억이 핀다'",
@@ -240,7 +212,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202610100931156"
   },
   {
-   "id": "의정부-18",
+   "id": "의정부-16",
    "category": "공연·전시",
    "region": "의정부",
    "title": "제47회 의정부시립무용단 정기공연 〈순백의 궤적 오방의 꽃이 되다〉",
@@ -254,7 +226,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611101716483"
   },
   {
-   "id": "의정부-19",
+   "id": "의정부-17",
    "category": "공연·전시",
    "region": "의정부",
    "title": "의정부기독합창단 제34회 정기연주회",
@@ -268,7 +240,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202610140937261"
   },
   {
-   "id": "의정부-20",
+   "id": "의정부-18",
    "category": "공연·전시",
    "region": "의정부",
    "title": "지브리 영화음악 콘서트 2026 - 의정부 앙코르",
@@ -282,7 +254,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202607011745212"
   },
   {
-   "id": "의정부-21",
+   "id": "의정부-19",
    "category": "공연·전시",
    "region": "의정부",
    "title": "의정부시립합창단 제37회 정기연주회 〈겨울의 노래 희망의 하모니〉",
@@ -296,7 +268,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611121423368"
   },
   {
-   "id": "의정부-22",
+   "id": "의정부-20",
    "category": "공연·전시",
    "region": "의정부",
    "title": "3DIVA CONCERT",
@@ -310,21 +282,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202609011659077"
   },
   {
-   "id": "동두천-23",
-   "category": "공연·전시",
-   "region": "동두천",
-   "title": "꿈나무정보도서관 11월 주말영화",
-   "startDate": "2026-11-07",
-   "endDate": "2026-11-21",
-   "time": "11월 7일 〈수퍼 소닉 2〉, 14일 〈멍뭉이〉, 21일 〈레고 무비 2〉 (토요일)",
-   "place": "꿈나무정보도서관 3층 시네마천국",
-   "address": "경기도 동두천시 지행로 38 (꿈나무정보도서관)",
-   "fee": "무료",
-   "description": "꿈나무정보도서관에서 11월 토요일마다 가족 영화를 무료로 틀어줘요. 신청 없이 현장에서 바로 볼 수 있어요. 외부 음료와 음식은 먹을 수 없고, 도서관 사정에 따라 바뀔 수 있어요. 상영 시간은 도서관에 문의하세요. 문의 031-860-3281.",
-   "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162008"
-  },
-  {
-   "id": "동두천-24",
+   "id": "동두천-21",
    "category": "공연·전시",
    "region": "동두천",
    "title": "동두천미디어센터 11월 무료영화",
@@ -338,7 +296,7 @@
    "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162160"
   },
   {
-   "id": "동두천-25",
+   "id": "동두천-22",
    "category": "공연·전시",
    "region": "동두천",
    "title": "동두천시립합창단 정기공연",
@@ -352,7 +310,35 @@
    "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162713"
   },
   {
-   "id": "연천-26",
+   "id": "동두천-23",
+   "category": "축제·장터",
+   "region": "동두천",
+   "title": "2026년 하반기 경기 살리기 통큰 세일 (동두천 전통시장·상점가)",
+   "startDate": "2026-12-04",
+   "endDate": "2026-12-10",
+   "time": "",
+   "place": "큰시장, 중앙시장, 양키시장, 소요산관광특구상점가 등 8곳",
+   "address": "",
+   "fee": "",
+   "description": "동두천 전통시장과 골목상권 8곳의 참여 점포에서 지역화폐로 2만 원 이상 결제하면 페이백을 돌려주는 세일이에요. 1인당 하루 최대 2만 원, 기간 중 최대 6만 원까지 받을 수 있어요. 예산이 떨어지면 일찍 끝날 수 있으니 연말 장보기는 초반에 하는 게 좋아요. 문의 동두천시청 경제팀 031-860-2309.",
+   "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162796"
+  },
+  {
+   "id": "동두천-24",
+   "category": "공연·전시",
+   "region": "동두천",
+   "title": "오르빛도서관 크리스마스 재즈콘서트",
+   "startDate": "2026-12-23",
+   "endDate": "2026-12-23",
+   "time": "오후 7시 ~ 8시",
+   "place": "오르빛도서관 4층 어린이자료실",
+   "address": "",
+   "fee": "",
+   "description": "냇 킹 콜, 프랭크 시나트라 같은 유명 재즈 음악과 책 속 캐럴을 함께 즐기는 크리스마스 공연이에요. 시민 누구나 100명까지 선착순이고, 12월 1일(화)부터 20일(일)까지 동두천시 도서관 홈페이지(lib.ddc.go.kr)에서 신청해요. 어린이자료실에서 열려서 아이와 같이 가기 좋아요. 문의 031-860-2707.",
+   "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162819"
+  },
+  {
+   "id": "연천-25",
    "category": "체험·교육",
    "region": "연천",
    "title": "우도원(우리 도서관 원정대)",
@@ -366,7 +352,7 @@
    "url": "https://library.yeoncheon.go.kr/menu/10051/program/30013/lectureList.do"
   },
   {
-   "id": "연천-27",
+   "id": "연천-26",
    "category": "체험·교육",
    "region": "연천",
    "title": "탐조 프로그램 〈산새들새〉",
@@ -380,35 +366,35 @@
    "url": "https://jgpm.ggcf.kr/edus/388"
   },
   {
-   "id": "연천-28",
+   "id": "연천-27",
    "category": "공연·전시",
    "region": "연천",
-   "title": "전통공연 〈추는 사람〉",
-   "startDate": "2026-11-20",
-   "endDate": "2026-11-21",
-   "time": "오후 3시 (약 70분)",
-   "place": "연천수레울아트홀 대공연장",
+   "title": "제4회 우리 동네 연천 자랑 그리기 대회",
+   "startDate": "2026-11-16",
+   "endDate": "2026-11-30",
+   "time": "오전 9시 ~ 오후 6시",
+   "place": "연천수레울아트홀 제1전시관",
    "address": "경기도 연천군 연천읍 문화로 150 (연천수레울아트홀)",
-   "fee": "1층 3만 원, 2층 2만 원 (어린이·청소년·어르신 50% 할인)",
-   "description": "수레울아트홀이 고른 우리 전통 춤 공연이에요. 어린이와 청소년은 반값이라 가족이 함께 보기 부담이 적어요. 만 7세 이상 관람할 수 있어요. 예매는 연천군시설관리공단 홈페이지(회원가입 필요)나 전화 031-834-3770으로 해요.",
-   "url": "https://yccs.or.kr/pub/perform/18611.do"
+   "fee": "",
+   "description": "'우리 동네 연천 자랑'을 주제로 한 그리기 대회가 수레울아트홀 제1전시관에서 열려요. 수레울아트홀 공연·전시 소식에 올라온 행사이고, 자세한 참가 방법이나 관람 안내는 페이지에 나와 있지 않아서 가기 전에 전화로 물어보세요. 문의 031-834-3770.",
+   "url": "https://yccs.or.kr/pub/perform/18702.do"
+  },
+  {
+   "id": "연천-28",
+   "category": "축제·장터",
+   "region": "연천",
+   "title": "2026 연말연시 빛의 광장",
+   "startDate": "2026-11-22",
+   "endDate": "2027-01-10",
+   "time": "점등식 11월 22일(일) 오후 6시 30분",
+   "place": "전곡역 광장 (전곡읍 전곡리 333-287)",
+   "address": "",
+   "fee": "",
+   "description": "전곡역 광장에 반짝이는 경관조명이 설치돼서 내년 1월 10일까지 볼 수 있어요. 저녁에 아이랑 사진 찍으며 산책하기 좋은 겨울 나들이 장소예요. 점등식은 11월 22일(일) 저녁에 열렸어요. 문의는 연천군청으로 하세요.",
+   "url": "https://www.facebook.com/talkyc/posts/1437980045146827"
   },
   {
    "id": "연천-29",
-   "category": "체험·교육",
-   "region": "연천",
-   "title": "특별교육프로그램 〈구석기 야.채.소〉",
-   "startDate": "2026-11-21",
-   "endDate": "2026-11-21",
-   "time": "오후 1시 30분 ~ 4시",
-   "place": "전곡선사박물관 테라스",
-   "address": "경기도 연천군 전곡읍 평화로443번길 2 (전곡선사박물관)",
-   "fee": "1가족 2만 원",
-   "description": "가족이 함께 석기를 만들어 두드리며 구석기 시대 소리를 내 보고, 야외 유적공원에서 물·바람·새 소리를 채집한 뒤 AI로 우리 가족만의 곡을 만드는 프로그램이에요. 가족 단위로 참여해요. 문자·전화(010-7545-2850, 오전 10시~오후 6시)로 미리 예약하고, 남은 자리는 현장에서 받아요. 문의 031-830-5613.",
-   "url": "https://jgpm.ggcf.kr/edus/390"
-  },
-  {
-   "id": "연천-30",
    "category": "체험·교육",
    "region": "연천",
    "title": "2027년 추천도서 가가호호 책배달 서비스 (어린이)",
@@ -422,7 +408,7 @@
    "url": "https://library.yeoncheon.go.kr/menu/10051/program/30013/lectureDetail.do?lectureIdx=1302"
   },
   {
-   "id": "연천-31",
+   "id": "연천-30",
    "category": "공연·전시",
    "region": "연천",
    "title": "주현미, 가요백년을 노래하다",
@@ -434,6 +420,20 @@
    "fee": "R석 5만 원, S석 4만 원, A석 2만 원",
    "description": "가수 주현미가 우리 가요 백 년을 노래하는 수레울아트홀 기획 콘서트예요. 만 7세 이상 볼 수 있어서 부모님 모시고 3대가 함께 가기 좋아요. 예매는 11월 5일(목) 오후 2시에 열리고, 연천군시설관리공단 홈페이지(회원가입 필요)나 전화 031-834-3770으로 해요.",
    "url": "https://yccs.or.kr/pub/perform/18640.do"
+  },
+  {
+   "id": "연천-31",
+   "category": "공연·전시",
+   "region": "연천",
+   "title": "YES오케스트라 2026 제12회 정기연주회",
+   "startDate": "2026-12-19",
+   "endDate": "2026-12-19",
+   "time": "오후 5시 30분 (약 80분)",
+   "place": "연천수레울아트홀 대공연장",
+   "address": "경기도 연천군 연천읍 문화로 150 (연천수레울아트홀)",
+   "fee": "전석 무료",
+   "description": "YES오케스트라의 열두 번째 정기연주회예요. 전 연령 관람이라 어린 동생까지 같이 갈 수 있고 전석 무료예요. 예매는 연천군시설관리공단 홈페이지 회원가입 후 하고, 일반 예매는 11월 20일부터 12월 18일 오후 5시까지예요. 문의 031-834-3770.",
+   "url": "https://yccs.or.kr/pub/perform/18699.do"
   },
   {
    "id": "포천-32",
@@ -451,20 +451,6 @@
   },
   {
    "id": "포천-33",
-   "category": "공연·전시",
-   "region": "포천",
-   "title": "꿈의 극단 포천 정기공연 〈수궁에 별이 떴다〉",
-   "startDate": "2026-11-21",
-   "endDate": "2026-11-21",
-   "time": "오후 3시 (70분)",
-   "place": "포천반월아트홀 소극장",
-   "address": "경기도 포천시 군내면 청성로 111 (포천반월아트홀)",
-   "fee": "무료",
-   "description": "아이들로 이루어진 '꿈의 극단 포천'이 무대에 올리는 국극 공연이에요. 전 연령 관람이라 아이와 같이 보기 좋고 공연 시간은 70분이에요. 관람료는 무료예요. 예약 방법은 원문이나 전화로 확인하세요. 문의 031-535-5939.",
-   "url": "https://pcfac.or.kr/sub02/sub01-1.php?type=view&uid=1819333"
-  },
-  {
-   "id": "포천-34",
    "category": "체험·교육",
    "region": "포천",
    "title": "미리 크리스마스 초콜릿 케이크 만들기 (면암중앙도서관)",
@@ -478,7 +464,7 @@
    "url": "https://lib.pocheon.go.kr/center/menu/10134/program/30014/lectureDetail.do?lectureIdx=7043"
   },
   {
-   "id": "포천-35",
+   "id": "포천-34",
    "category": "공연·전시",
    "region": "포천",
    "title": "이금희와 함께하는 오후 2시 〈다정한 클래식〉 - 미리메리크리스마스",
@@ -492,7 +478,7 @@
    "url": "https://www.pcfac.or.kr/sub02/sub01-1.php"
   },
   {
-   "id": "포천-36",
+   "id": "포천-35",
    "category": "축제·장터",
    "region": "포천",
    "title": "2026 포천 펫스타 in 아트밸리",
@@ -506,7 +492,7 @@
    "url": "https://www.dongbangilbo.co.kr/news/articleView.html?idxno=113455"
   },
   {
-   "id": "포천-37",
+   "id": "포천-36",
    "category": "공연·전시",
    "region": "포천",
    "title": "포천시립민속예술단 송년공연 「삼색풍류: 일상에 스미다」",
@@ -518,6 +504,20 @@
    "fee": "전석 무료",
    "description": "전통춤, 풍물, 기악 세 가지 전통예술을 한 무대에서 보여주는 포천시립민속예술단의 송년공연이에요. 포천 전통 소리 메나리를 바탕으로 한 작품도 나와요. 만 7세 이상 볼 수 있고 전석 무료예요. 예매 방법은 문의해 보세요. 문의 031-535-0208.",
    "url": "https://pcfac.or.kr/sub02/sub01-1.php?type=view&uid=1819329"
+  },
+  {
+   "id": "포천-37",
+   "category": "공연·전시",
+   "region": "포천",
+   "title": "2026 농협은행과 함께하는 〈포천사랑 가곡의 밤〉",
+   "startDate": "2026-12-12",
+   "endDate": "2026-12-12",
+   "time": "오후 5시 (약 100분)",
+   "place": "포천반월아트홀 대극장",
+   "address": "경기도 포천시 군내면 청성로 111 (포천반월아트홀)",
+   "fee": "전석 무료",
+   "description": "NH농협은행 후원으로 한국 가곡과 오케스트라 연주를 들려주는 무료 공연이에요. 8세 이상 볼 수 있어서 초등학생 아이와 같이 갈 수 있어요. 티켓은 11월 30일(월) 오후 2시에 열리니 그때 맞춰 예매하세요. 문의 031-535-3612.",
+   "url": "https://pcfac.or.kr/sub02/sub01-1.php?type=view&uid=1819340"
   },
   {
    "id": "포천-38",
