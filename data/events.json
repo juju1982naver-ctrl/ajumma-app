@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-25",
  "events": [
   {
    "id": "양주-1",
@@ -101,6 +101,90 @@
   },
   {
    "id": "양주-8",
+   "category": "체험·교육",
+   "region": "양주",
+   "title": "AI로 만드는 나만의 캐릭터 (숲길작은도서관)",
+   "startDate": "2026-11-25",
+   "endDate": "2026-12-10",
+   "time": "12월 12일·19일(토) 오후 2시 ~ 4시 (2회)",
+   "place": "숲길작은도서관 (계룡더파크포레 2037동 1층)",
+   "address": "경기도 양주시 옥정로2길 265 (숲길작은도서관)",
+   "fee": "무료",
+   "description": "AI로 나만의 캐릭터를 만들고 여러 모습으로 바꿔 보며 나를 표현하는 캐릭터를 완성하는 수업이에요. 대상은 초등 3~5학년 10명이고 재료비는 없어요. 위 날짜는 신청 기간이고 11월 25일(수) 오전 10시부터 선착순이라 일찍 신청하는 게 좋아요. 노트북이나 태블릿을 챙기고, 부모님 구글 아이디로 로그인해야 해요. 신청은 양주시 사립작은도서관 홈페이지 문화행사신청이나 전화로 해요. 문의 031-8082-7418.",
+   "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7646"
+  },
+  {
+   "id": "양주-9",
+   "category": "체험·교육",
+   "region": "양주",
+   "title": "AI로 만드는 나만의 캐릭터 (행복한작은도서관)",
+   "startDate": "2026-11-25",
+   "endDate": "2026-12-10",
+   "time": "12월 12일·19일(토) 오전 10시 ~ 12시 (2회)",
+   "place": "행복한작은도서관 (덕정주공 8단지 802동 1층)",
+   "address": "경기도 양주시 고암길 172-14 (행복한작은도서관)",
+   "fee": "무료",
+   "description": "AI로 나만의 캐릭터를 만들고 여러 모습으로 바꿔 보며 나를 표현하는 캐릭터를 완성하는 수업이에요. 대상은 초등 3~5학년 8명이고 재료비는 없어요. 위 날짜는 신청 기간이고 11월 25일(수) 오전 10시부터 선착순이라 일찍 신청하는 게 좋아요. 노트북이나 태블릿을 챙기고, 부모님 구글 아이디로 로그인해야 해요. 신청은 양주시 사립작은도서관 홈페이지 문화행사신청이나 전화로 해요. 문의 031-8082-7418.",
+   "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7645"
+  },
+  {
+   "id": "양주-10",
+   "category": "체험·교육",
+   "region": "양주",
+   "title": "그림책 여행 (린파밀리에작은도서관)",
+   "startDate": "2026-11-25",
+   "endDate": "2026-12-11",
+   "time": "12월 14일(월)·15일(화) 오후 4시 ~ 6시 (2회)",
+   "place": "린파밀리에작은도서관 (옥정린파밀리에 103동 지하3층 에듀센터)",
+   "address": "경기도 양주시 옥정서로5길 60 (린파밀리에작은도서관)",
+   "fee": "무료",
+   "description": "계절 그림책을 읽으며 계절의 특징을 알아보고, 여러 재료로 그림책 주제를 표현해 보는 수업이에요. 대상은 초등 1~3학년 10명이고 재료비는 없어요. 위 날짜는 신청 기간이고 11월 25일(수) 오전 10시부터 선착순이라 일찍 신청하는 게 좋아요. 신청은 양주시 사립작은도서관 홈페이지 문화행사신청이나 전화로 해요. 문의 031-8082-7418.",
+   "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7650"
+  },
+  {
+   "id": "양주-11",
+   "category": "체험·교육",
+   "region": "양주",
+   "title": "그림책 여행 (엘리프작은도서관)",
+   "startDate": "2026-11-25",
+   "endDate": "2026-12-04",
+   "time": "12월 7일(월)·8일(화) 오후 4시 ~ 6시 (2회)",
+   "place": "엘리프작은도서관 (엘리프 옥정 시그니처 상가동)",
+   "address": "경기도 양주시 옥정동로9길 35 (엘리프작은도서관)",
+   "fee": "무료",
+   "description": "계절 그림책을 읽으며 계절의 특징을 알아보고, 여러 재료로 그림책 주제를 표현해 보는 수업이에요. 대상은 초등 1~3학년 10명이고 재료비는 없어요. 위 날짜는 신청 기간이고 11월 25일(수) 오전 10시부터 선착순이라 일찍 신청하는 게 좋아요. 신청은 양주시 사립작은도서관 홈페이지 문화행사신청이나 전화로 해요. 문의 031-8082-7418.",
+   "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7649"
+  },
+  {
+   "id": "양주-12",
+   "category": "체험·교육",
+   "region": "양주",
+   "title": "레고로 즐기는 그림책 교실 (새싹작은도서관)",
+   "startDate": "2026-11-25",
+   "endDate": "2026-12-07",
+   "time": "12월 8일·15일(화) 오후 4시 30분 ~ 6시 (2회)",
+   "place": "새싹작은도서관 (양주덕계푸르지오 관리동)",
+   "address": "경기도 양주시 고덕로 89 (새싹작은도서관)",
+   "fee": "무료",
+   "description": "그림책 속 문제를 찾아 순서를 세우고 레고 브릭으로 만들어 소개하면서 코딩 기초(순서·반복·조건)를 놀이처럼 익히는 수업이에요. 대상은 초등 1~3학년 10명이고 재료비는 없어요. 위 날짜는 신청 기간이고 11월 25일(수) 오전 10시부터 선착순이라 일찍 신청하는 게 좋아요. 신청은 양주시 사립작은도서관 홈페이지 문화행사신청이나 전화로 해요. 문의 031-8082-7418.",
+   "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7648"
+  },
+  {
+   "id": "양주-13",
+   "category": "체험·교육",
+   "region": "양주",
+   "title": "레고로 즐기는 그림책 교실 (책풍경작은도서관)",
+   "startDate": "2026-11-25",
+   "endDate": "2026-12-04",
+   "time": "12월 6일·13일(일) 오전 10시 ~ 11시 30분 (2회)",
+   "place": "책풍경작은도서관 (제일풍경채레이크시티1단지 커뮤니티센터)",
+   "address": "경기도 양주시 옥정동로 212 (책풍경작은도서관)",
+   "fee": "무료",
+   "description": "그림책 속 문제를 찾아 순서를 세우고 레고 브릭으로 만들어 소개하면서 코딩 기초(순서·반복·조건)를 놀이처럼 익히는 수업이에요. 대상은 초등 1~3학년 10명이고 재료비는 없어요. 위 날짜는 신청 기간이고 11월 25일(수) 오전 10시부터 선착순이라 일찍 신청하는 게 좋아요. 신청은 양주시 사립작은도서관 홈페이지 문화행사신청이나 전화로 해요. 문의 031-8082-7418.",
+   "url": "https://www.libyj.go.kr/ojlake/menu/10082/program/30021/lectureDetail.do?lectureIdx=7647"
+  },
+  {
+   "id": "양주-14",
    "category": "공연·전시",
    "region": "양주",
    "title": "2026 장흥면 주민자치회 송년음악회",
@@ -114,7 +198,7 @@
    "url": "https://www.yangju.go.kr/www/selectBbsNttView.do?key=203&bbsNo=14&nttNo=209604"
   },
   {
-   "id": "양주-9",
+   "id": "양주-15",
    "category": "공연·전시",
    "region": "양주",
    "title": "2026 양주시립예술단 송년음악회",
@@ -128,7 +212,7 @@
    "url": "https://www.yangju.go.kr/www/selectBbsNttView.do?key=203&bbsNo=14&nttNo=209822"
   },
   {
-   "id": "의정부-10",
+   "id": "의정부-16",
    "category": "공연·전시",
    "region": "의정부",
    "title": "지역작가 공감갤러리 〈한 작가 한 달〉",
@@ -142,7 +226,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_04D.php?EXB_CODE=202605061540479"
   },
   {
-   "id": "의정부-11",
+   "id": "의정부-17",
    "category": "공연·전시",
    "region": "의정부",
    "title": "제24회 대한민국아카데미미술대전",
@@ -156,7 +240,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_04D.php?EXB_CODE=202611191704267"
   },
   {
-   "id": "의정부-12",
+   "id": "의정부-18",
    "category": "공연·전시",
    "region": "의정부",
    "title": "11월의 크리스마스 콘서트 - 로열 콘세르트헤바우 오케스트라 브라스 앙상블",
@@ -170,7 +254,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202609011701196"
   },
   {
-   "id": "의정부-13",
+   "id": "의정부-19",
    "category": "공연·전시",
    "region": "의정부",
    "title": "음악이 흐르는 북토크 의정부ㄱ콘서트 (11월)",
@@ -184,7 +268,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611101720108"
   },
   {
-   "id": "의정부-14",
+   "id": "의정부-20",
    "category": "공연·전시",
    "region": "의정부",
    "title": "창작 뮤지컬 경기틴즈 〈경험대여소〉",
@@ -198,7 +282,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611101723095"
   },
   {
-   "id": "의정부-15",
+   "id": "의정부-21",
    "category": "공연·전시",
    "region": "의정부",
    "title": "이은미 콘서트 with 오케스트라 '추억이 핀다'",
@@ -212,7 +296,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202610100931156"
   },
   {
-   "id": "의정부-16",
+   "id": "의정부-22",
    "category": "공연·전시",
    "region": "의정부",
    "title": "제47회 의정부시립무용단 정기공연 〈순백의 궤적 오방의 꽃이 되다〉",
@@ -226,7 +310,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611101716483"
   },
   {
-   "id": "의정부-17",
+   "id": "의정부-23",
    "category": "공연·전시",
    "region": "의정부",
    "title": "의정부기독합창단 제34회 정기연주회",
@@ -240,7 +324,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202610140937261"
   },
   {
-   "id": "의정부-18",
+   "id": "의정부-24",
    "category": "공연·전시",
    "region": "의정부",
    "title": "지브리 영화음악 콘서트 2026 - 의정부 앙코르",
@@ -254,7 +338,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202607011745212"
   },
   {
-   "id": "의정부-19",
+   "id": "의정부-25",
    "category": "공연·전시",
    "region": "의정부",
    "title": "의정부시립합창단 제37회 정기연주회 〈겨울의 노래 희망의 하모니〉",
@@ -268,7 +352,21 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611121423368"
   },
   {
-   "id": "의정부-20",
+   "id": "의정부-26",
+   "category": "공연·전시",
+   "region": "의정부",
+   "title": "2026 의정부시어린이오케스트라 정기연주회 〈ARMONIA〉",
+   "startDate": "2026-12-12",
+   "endDate": "2026-12-12",
+   "time": "오후 3시 (60분)",
+   "place": "의정부예술의전당 대극장",
+   "address": "경기도 의정부시 의정로 1 (의정부예술의전당)",
+   "fee": "무료",
+   "description": "의정부시어린이오케스트라 친구들이 꾸미는 연말 정기연주회예요. 또래 아이들이 연주하는 무대라 아이들이 보면 자극도 되고 좋아해요. 5세 이상 볼 수 있고 전석 무료예요. 공연 시간은 1시간이에요. 문의 010-2039-7906.",
+   "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202611241020220"
+  },
+  {
+   "id": "의정부-27",
    "category": "공연·전시",
    "region": "의정부",
    "title": "3DIVA CONCERT",
@@ -282,7 +380,7 @@
    "url": "https://www.uac.or.kr/newuac/performance/performance_01D.php?PFM_CODE=202609011659077"
   },
   {
-   "id": "동두천-21",
+   "id": "동두천-28",
    "category": "공연·전시",
    "region": "동두천",
    "title": "동두천미디어센터 11월 무료영화",
@@ -296,7 +394,7 @@
    "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162160"
   },
   {
-   "id": "동두천-22",
+   "id": "동두천-29",
    "category": "공연·전시",
    "region": "동두천",
    "title": "동두천시립합창단 정기공연",
@@ -310,7 +408,7 @@
    "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162713"
   },
   {
-   "id": "동두천-23",
+   "id": "동두천-30",
    "category": "축제·장터",
    "region": "동두천",
    "title": "2026년 하반기 경기 살리기 통큰 세일 (동두천 전통시장·상점가)",
@@ -324,7 +422,7 @@
    "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162796"
   },
   {
-   "id": "동두천-24",
+   "id": "동두천-31",
    "category": "공연·전시",
    "region": "동두천",
    "title": "오르빛도서관 크리스마스 재즈콘서트",
@@ -338,7 +436,7 @@
    "url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=162819"
   },
   {
-   "id": "연천-25",
+   "id": "연천-32",
    "category": "체험·교육",
    "region": "연천",
    "title": "우도원(우리 도서관 원정대)",
@@ -352,7 +450,7 @@
    "url": "https://library.yeoncheon.go.kr/menu/10051/program/30013/lectureList.do"
   },
   {
-   "id": "연천-26",
+   "id": "연천-33",
    "category": "체험·교육",
    "region": "연천",
    "title": "탐조 프로그램 〈산새들새〉",
@@ -366,7 +464,7 @@
    "url": "https://jgpm.ggcf.kr/edus/388"
   },
   {
-   "id": "연천-27",
+   "id": "연천-34",
    "category": "공연·전시",
    "region": "연천",
    "title": "제4회 우리 동네 연천 자랑 그리기 대회",
@@ -380,7 +478,7 @@
    "url": "https://yccs.or.kr/pub/perform/18702.do"
   },
   {
-   "id": "연천-28",
+   "id": "연천-35",
    "category": "축제·장터",
    "region": "연천",
    "title": "2026 연말연시 빛의 광장",
@@ -394,7 +492,21 @@
    "url": "https://www.facebook.com/talkyc/posts/1437980045146827"
   },
   {
-   "id": "연천-29",
+   "id": "연천-36",
+   "category": "축제·장터",
+   "region": "연천",
+   "title": "2026 연천콩축제",
+   "startDate": "2026-11-27",
+   "endDate": "2026-11-29",
+   "time": "",
+   "place": "연천역 광장",
+   "address": "",
+   "fee": "",
+   "description": "연천 콩을 주제로 한 축제로 콩 신품종 전시, 연천 집된장 미식회, 이색 콩 체험 프로그램, 콩 요리 시식이 준비돼 있어요. 온 가족이 함께 즐길 수 있다고 안내돼 있어요. 시간과 요금은 아직 안내가 없어서 가기 전에 연천군청에 확인해 보세요. 연천군 대표전화 031-839-2114.",
+   "url": "https://www.facebook.com/talkyc/posts/1444005201210978"
+  },
+  {
+   "id": "연천-37",
    "category": "체험·교육",
    "region": "연천",
    "title": "2027년 추천도서 가가호호 책배달 서비스 (어린이)",
@@ -408,7 +520,7 @@
    "url": "https://library.yeoncheon.go.kr/menu/10051/program/30013/lectureDetail.do?lectureIdx=1302"
   },
   {
-   "id": "연천-30",
+   "id": "연천-38",
    "category": "공연·전시",
    "region": "연천",
    "title": "주현미, 가요백년을 노래하다",
@@ -422,7 +534,7 @@
    "url": "https://yccs.or.kr/pub/perform/18640.do"
   },
   {
-   "id": "연천-31",
+   "id": "연천-39",
    "category": "공연·전시",
    "region": "연천",
    "title": "YES오케스트라 2026 제12회 정기연주회",
@@ -436,7 +548,7 @@
    "url": "https://yccs.or.kr/pub/perform/18699.do"
   },
   {
-   "id": "포천-32",
+   "id": "포천-40",
    "category": "체험·교육",
    "region": "포천",
    "title": "포천38문화예술창작소 문화예술교육",
@@ -450,21 +562,7 @@
    "url": "https://www.pcfac.or.kr/sub03/sub06-1.php"
   },
   {
-   "id": "포천-33",
-   "category": "체험·교육",
-   "region": "포천",
-   "title": "미리 크리스마스 초콜릿 케이크 만들기 (면암중앙도서관)",
-   "startDate": "2026-11-24",
-   "endDate": "2026-12-14",
-   "time": "수업: 12월 19일(토) 오전 10시 ~ 12시",
-   "place": "포천 면암중앙도서관 독서토론실2",
-   "address": "경기도 포천시 신북면 중앙로207번길 26 (면암중앙도서관)",
-   "fee": "재료비 10,000원",
-   "description": "초등 3~6학년 아이들이 크리스마스 초콜릿 케이크를 직접 만드는 송년 프로그램이에요(15명). 위 날짜는 신청 기간이고 11월 24일(화) 오전 9시부터 면암중앙도서관 홈페이지에서 받아요. 접수 시작 후 5일은 포천시민 우선이고, 재료비는 입금 후 환불이 안 돼요. 연락 없이 안 오면 다음 프로그램 참여가 2번 제한돼요. 문의 031-538-3912.",
-   "url": "https://lib.pocheon.go.kr/center/menu/10134/program/30014/lectureDetail.do?lectureIdx=7043"
-  },
-  {
-   "id": "포천-34",
+   "id": "포천-41",
    "category": "공연·전시",
    "region": "포천",
    "title": "이금희와 함께하는 오후 2시 〈다정한 클래식〉 - 미리메리크리스마스",
@@ -478,7 +576,7 @@
    "url": "https://www.pcfac.or.kr/sub02/sub01-1.php"
   },
   {
-   "id": "포천-35",
+   "id": "포천-42",
    "category": "축제·장터",
    "region": "포천",
    "title": "2026 포천 펫스타 in 아트밸리",
@@ -492,7 +590,7 @@
    "url": "https://www.dongbangilbo.co.kr/news/articleView.html?idxno=113455"
   },
   {
-   "id": "포천-36",
+   "id": "포천-43",
    "category": "공연·전시",
    "region": "포천",
    "title": "포천시립민속예술단 송년공연 「삼색풍류: 일상에 스미다」",
@@ -506,7 +604,7 @@
    "url": "https://pcfac.or.kr/sub02/sub01-1.php?type=view&uid=1819329"
   },
   {
-   "id": "포천-37",
+   "id": "포천-44",
    "category": "공연·전시",
    "region": "포천",
    "title": "2026 농협은행과 함께하는 〈포천사랑 가곡의 밤〉",
@@ -520,7 +618,7 @@
    "url": "https://pcfac.or.kr/sub02/sub01-1.php?type=view&uid=1819340"
   },
   {
-   "id": "포천-38",
+   "id": "포천-45",
    "category": "공연·전시",
    "region": "포천",
    "title": "송년음악회 〈크리스마스 뮤지컬 갈라〉",
